@@ -1,0 +1,49 @@
+{% extends 'base.html' %}
+
+{% block title %}Sample{% endblock %}
+
+{% block content %}
+<div class="card">
+    <div class="card-header">
+        <h3 class="mb-0"><i class="fas fa-vial me-2"></i>Theme Sample Page</h3>
+    </div>
+    <div class="card-body">
+        <p class="mb-3">This page now inherits the global light/dark theme from <code>base.html</code>.</p>
+        <div class="table-responsive">
+            <table class="table table-bordered table-hover">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Column A</th>
+                        <th>Column B</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Alpha</td>
+                        <td>Bravo</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Charlie</td>
+                        <td>Delta</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="mt-4">
+            <h4>Sample Content</h4>
+            <p>This is a sample paragraph to test theme colors.</p>
+            <ul>
+                <li>List item 1</li>
+                <li>List item 2</li>
+                <li>List item 3</li>
+            </ul>
+            <div class="alert alert-info">
+                <strong>Info:</strong> This is an alert box to test theme styling.
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
